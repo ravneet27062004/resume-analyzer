@@ -97,7 +97,8 @@ const Upload = () => {
             console.log("7️⃣ Creating resume data...");
 
             const uuid = generateUUID();
-
+console.log("UUID:", uuid);
+console.log("NAVIGATE TO:", `/resume/${uuid}`);
             const data = {
                 id: uuid,
                 resumePath: uploadedFile.path,
